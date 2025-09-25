@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areeya Portfolio</title>
+
+  <!-- ✅ Preload Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+  <div class="container">
+    <h1 class="logo">Areeya</h1>
+
+    <!-- ปุ่ม Hamburger -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn-dark">Contact</a>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Hello! I'm <span class="highlight-name">May</span></h1>
+      <h2>I want to be a <span id="typewriter"></span></h2>
+      <p>
+        From analyzing data to designing interfaces and developing games, I love creating digital experiences that are both smart and fun.
+      </p>
+      <a href="#projects" class="btn-primary">See My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="/images/img-header.webp" alt="Profile Image">
+      <div class="shape shape-pink"></div>
+      <div class="shape shape-blue"></div>
+      <div class="doodle star1">★</div>
+      <div class="doodle star2">✦</div>
+      <div class="doodle star3">✧</div>
+      <div class="doodle star4">★</div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="about reveal">
+    <div class="container about-container">
+      <div class="about-gallery">
+        <img src="/images/img-about1.webp" alt="Art 1" loading="lazy">
+        <img src="/images/img-about2.webp" alt="Art 2" loading="lazy">
+        <img src="/images/img-about3.webp" alt="Art 3" loading="lazy">
+        <img src="/images/img-about4.webp" alt="Art 4" loading="lazy">
+      </div>
+      <div class="about-text">
+        <h3>About Me</h3>
+        <p>
+          I'm a Computer Science student passionate about creating beautiful, user-centered digital experiences.  
+          I enjoy blending web design, UX/UI, and 8-bit art to make projects functional and visually appealing.
+        </p>
+        <p>
+          I have experience in frontend development, design thinking, and prototyping.  
+          My goal is to craft interfaces that communicate clearly while reflecting my personal style.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills reveal">
+  <div class="container">
+    <h3>My Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-box powerbi">📊 Power BI</div>
+      <div class="skill-box python">🐍 SQL</div>
+      <div class="skill-box sql">💾 Power BI</div>
+      <div class="skill-box uxui">🎨 UX/UI Design</div>
+      <div class="skill-box gamedev">🎮 Game Development</div>
+      <div class="skill-box figma">📐 Figma</div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Projects -->
+  <section id="projects" class="projects reveal">
+    <div class="container">
+      <h3>My Projects</h3>
+      <div class="grid-3">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience reveal">
+    <div class="container">
+      <h3>My Experience</h3>
+      <p>
+        Here's a brief overview of my professional experience and projects I have worked on.
+      </p>
+      <div class="grid-3">
+        <div class="card">Experience 1</div>
+        <div class="card">Experience 2</div>
+        <div class="card">Experience 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Areeya. All rights reserved.</p>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Contact Me</h3>
+      <p>If you'd like to work together, feel free to reach out via email or connect on LinkedIn.</p>
+      <a href="mailto:youremail@example.com" class="btn-accent">Email Me</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
