@@ -31,26 +31,49 @@
 </head>
 <body class="bg-may-bg text-dark-text overflow-x-hidden">
 
-    <nav class="font-epilogue flex justify-between items-center px-10 py-8 max-w-7xl mx-auto relative z-50">
-        <div class="flex-1">
-            <a href="index.html">
-                <img src="images/Logo.png" class="h-10 object-contain" alt="Maydae Logo">
+    <nav class="font-epilogue flex justify-between items-center px-10 py-8 max-w-7xl mx-auto relative">
+    <div class="flex-1">
+        <a href="index.html">
+            <img src="images/Logo.png" class="h-10 object-contain" alt="Maydae Logo">
+        </a>
+    </div>
+
+    <button id="menu-btn" class="block md:hidden flex-none z-50">
+        <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <ul id="menu" class="hidden md:flex md:flex-1 md:justify-center gap-10 text-[15px] font-medium text-gray-400 
+        absolute md:relative top-full left-0 w-full md:w-auto 
+        bg-white md:bg-transparent flex-col md:flex-row 
+        items-center py-10 md:py-0 shadow-lg md:shadow-none z-40">
+        <li><a href="index.html" class="hover:text-dark-text transition-colors">Home</a></li>
+        <li><a href="about.html" class="hover:text-dark-text transition-colors">About</a></li>
+        <li>
+            <a href="projects.html" class="text-dark-text relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-dark-text after:rounded-full">
+                Projects
             </a>
-        </div>
-        <ul class="hidden md:flex gap-10 text-[15px] font-medium text-gray-400">
-            <li><a href="index.html" class="hover:text-dark-text transition-colors">Home</a></li>
-            <li><a href="about.html" class="hover:text-dark-text transition-colors">About</a></li>
-            <li>
-                <a href="projects.html" class="text-dark-text relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-dark-text after:rounded-full">
-                    Projects
-                </a>
-            </li>
-            <li><a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a></li>
-        </ul>
-        <div class="flex-1 text-right">
-            <a href="https://github.com/areeyamay" target="_blank" class="text-[14px] font-medium text-gray-500 hover:text-dark-text transition-colors">@areeyamay</a>
-        </div>
-    </nav>
+        </li>
+        <li><a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a></li>
+    </ul>
+
+    <div class="hidden md:flex flex-1 justify-end">
+        <a href="https://github.com/areeyamay" target="_blank" class="text-[14px] font-medium text-gray-500 hover:text-dark-text transition-colors">@areeyamay</a>
+    </div>
+</nav>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+    });
+</script>
 
     <div class="fixed inset-0 -z-20 overflow-hidden pointer-events-none">
         <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#ffdce5] blur-[120px] rounded-full opacity-40"></div>
