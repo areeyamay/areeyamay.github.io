@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Maydae Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Epilogue:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'may-orange': '#FF8C69',
+                        'may-bg': '#FFFFFF',
+                        'dark-text': '#1e1e1e',
+                    },
+                    fontFamily: {
+                        'sans': ['"DM Sans"', 'sans-serif'],
+                        'epilogue': ['"Epilogue"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-epilogue { font-family: 'Epilogue', sans-serif; }
+    </style>
+</head>
+<body class="bg-may-bg text-dark-text overflow-x-hidden">
+
+    <nav class="font-epilogue flex justify-between items-center px-10 py-8 max-w-7xl mx-auto relative z-50">
+        <div class="flex-1">
+            <a href="index.html">
+                <img src="images/Logo.png" class="h-10 object-contain" alt="Maydae Logo">
+            </a>
+        </div>
+        <ul class="hidden md:flex gap-10 text-[15px] font-medium text-gray-400">
+            <li><a href="index.html" class="hover:text-dark-text transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-dark-text transition-colors">About</a></li>
+            <li>
+                <a href="projects.html" class="text-dark-text relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-dark-text after:rounded-full">
+                    Projects
+                </a>
+            </li>
+            <li><a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a></li>
+        </ul>
+        <div class="flex-1 text-right">
+            <a href="https://github.com/areeyamay" target="_blank" class="text-[14px] font-medium text-gray-500 hover:text-dark-text transition-colors">@areeyamay</a>
+        </div>
+    </nav>
+
+    <div class="fixed inset-0 -z-20 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#ffdce5] blur-[120px] rounded-full opacity-40"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[700px] h-[700px] bg-[#dfc1f5] blur-[140px] rounded-full opacity-30"></div>
+        <div class="absolute bottom-[5%] left-[-5%] w-[600px] h-[600px] bg-[#fff0e0] blur-[120px] rounded-full opacity-50"></div>
+        <div class="absolute bottom-[-10%] right-[5%] w-[500px] h-[500px] bg-[#fd7d54] blur-[100px] rounded-full opacity-20"></div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-10 pt-24 pb-20 relative">
+        
+        <h2 class="text-5xl font-bold mb-20 tracking-tight text-dark-text font-epilogue text-center">
+            My Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-stretch">
+            
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner">
+                    <img src="images/project1.png" class="w-full h-full object-cover" alt="Project Image">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">Tales of Redemption</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">An 8-bit RPG game focused on environmental awareness, built with the Godot Engine.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">2D Game</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Godot Engine</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">GDScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project2.jpg" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">Movie Profit Analysis for Streaming</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">A data analysis project using Power BI to identify high-ROI films and key factors for streaming platform decisions.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Data Analysis</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Data Visualization</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Power BI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project3.png" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">AdoptMe</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">UX/UI design for a pet adoption app helping homeless pets find owners, designed in Figma.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">UX/UI Design</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Wireframing</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project4.jpg" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">MeowMood</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">A web application for classifying cat emotions from images using deep learning (TensorFlow).</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Web App</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Deep Learning</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Image Classification</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project5.png" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">FlexZone</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">UX/UI design for a fitness equipment rental app with business planning and interactive prototype.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">UX/UI Design</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Business Model Planning</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project6.png" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">WaterMe</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">A mobile app that helps users track daily water intake with reminders, using a plant watering concept.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Kotlin</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Android Studio</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Mobile App Development</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project7.png" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">Hospital patient database design</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">Hospital patient management database design integrating medical data using a relational model (ERD & schema).</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Database Design</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">ERD & Relational Schema</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project8.PNG" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">Pizzilla</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">Pizza POS system built with Python GUI supporting menu sales, reporting, and membership management.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Desktop Application</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Python GUI</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">POS System Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project9.jpg" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">Open House Event Website</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">Open house event website built with Angular featuring event details, location info, and registration.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Angular</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Front-end Development</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">HTML / CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+                <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner"><img src="images/project10.png" class="w-full h-full object-cover" alt="W2"></div>
+                <div class="flex flex-col flex-grow">
+                    <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-may-orange transition-colors">HANGMEOW</h3>
+                    <p class="text-gray-500 text-lg mb-10 flex-grow">Hangman-style game (Hangmeow) developed in Java featuring word guessing and score tracking.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Java</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">NetBeans</span>
+                        <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Object-Oriented Programming (OOP)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="max-w-6xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 relative">
+    
+    <div class="flex-1 text-left">
+        <h2 class="text-[56px] font-bold text-dark-text font-epilogue leading-tight mb-8">Contact Me</h2>
+        <p class="text-gray-500 text-xl mb-12 leading-[1.6] max-w-md font-medium">
+            I'm currently open to internships and opportunities in UX/UI and Data Analysis. <br> Feel free to reach out!
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-6">
+            <div class="bg-white/40 backdrop-blur-md text-dark-text px-6 py-3 rounded-2xl font-bold text-[15px] flex items-center gap-3 shadow-sm border border-white/40 font-epilogue">
+                <img src="images/call.svg" class="w-4 h-4" alt="Call"> 091-882-5865
+            </div>
+
+            <div class="flex items-center gap-5">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=areeya.sant@gmail.com" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/mail.svg" class="w-8 h-8" alt="Mail">
+                </a>
+                <a href="https://www.facebook.com/areeya.santiburananon" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/facebook.svg" class="w-8 h-8" alt="FB">
+                </a>
+                <a href="https://line.me/ti/p/yeZ6ZIpLTH" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/line.svg" class="w-8 h-8" alt="Line">
+                </a>
+                <a href="https://github.com/areeyamay" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/github.svg" class="w-8 h-8" alt="GH">
+                </a>
+                <a href="https://www.linkedin.com/in/areeya-santiburananon" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/linkedin.svg" class="w-8 h-8" alt="IN">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-1 flex justify-end relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-white/40 blur-[40px] rounded-full -z-10"></div>
+        <div class="w-full max-w-[400px]">
+            <img src="images/contact.png" class="w-full h-auto" alt="Contact">
+        </div>
+    </div>
+</section>
+
+    <footer class="max-w-7xl mx-auto px-10 py-12 border-t border-gray-100/50 mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-[15px] font-medium text-gray-400 font-epilogue">
+            
+            <div class="flex-1 text-left">
+                © 2026 Areeya Santiburananon
+            </div>
+
+            <div class="flex flex-1 justify-center gap-8">
+                <a href="index.html" class="hover:text-dark-text transition-colors">Home</a>
+                <a href="about.html" class="hover:text-dark-text transition-colors">About</a>
+                <a href="projects.html" class="hover:text-dark-text transition-colors">Projects</a>
+                <a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a>
+            </div>
+
+            <div class="flex-1 flex justify-end">
+                <a href="#" class="text-dark-text font-bold hover:opacity-70 transition-opacity flex items-center gap-2">
+                    Back to top
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

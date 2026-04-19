@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Maydae</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'may-bg': '#FFFFFF', 'dark-text': '#1e1e1e' },
+                    fontFamily: { 'sans': ['"DM Sans"', 'sans-serif'], 'epilogue': ['"Epilogue"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-epilogue { font-family: 'Epilogue', sans-serif; }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-may-bg text-dark-text overflow-x-hidden">
+
+    <div class="fixed inset-0 -z-20 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#ffdce5] blur-[120px] rounded-full opacity-40"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[700px] h-[700px] bg-[#dfc1f5] blur-[140px] rounded-full opacity-30"></div>
+    </div>
+
+    <nav class="font-epilogue flex justify-between items-center px-10 py-8 max-w-7xl mx-auto">
+    <div class="flex-1">
+        <a href="index.html">
+            <img src="images/Logo.png" class="h-10 object-contain" alt="Maydae Logo">
+        </a>
+    </div>
+    <ul class="hidden md:flex gap-10 text-[15px] font-medium text-gray-400">
+        <li><a href="index.html" class="hover:text-dark-text transition-colors">Home</a></li>
+        <li>
+            <a href="about.html" class="text-dark-text relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-dark-text after:rounded-full">
+                About
+            </a>
+        </li>
+        <li><a href="projects.html" class="hover:text-dark-text transition-colors">Projects</a></li>
+        <li><a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a></li>
+    </ul>
+    <div class="flex-1 text-right">
+        <a href="https://github.com/areeyamay" target="_blank" class="text-[14px] font-medium text-gray-500 hover:text-dark-text transition-colors">@areeyamay</a>
+    </div>
+</nav>
+
+    <section class="max-w-7xl mx-auto px-10 py-24 text-center relative">
+    <h2 class="text-5xl font-bold mb-20 tracking-tight text-dark-text font-epilogue text-center">
+        About Me
+    </h2>
+
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
+        
+        <div class="w-full md:w-[420px] shrink-0 self-stretch">
+            <div class="h-full overflow-hidden rounded-[3rem] shadow-sm">
+                <img src="images/about_img.png" class="w-full h-full object-cover" alt="Profile Image">
+            </div>
+        </div>
+
+        <div class="w-full max-w-2xl bg-white/40 backdrop-blur-lg rounded-[3.5rem] p-12 md:p-16 text-left border border-white/40 shadow-sm relative overflow-visible flex flex-col h-full self-stretch">
+            
+            <div class="absolute top-12 right-12 z-10">
+                <img src="images/emoji1.svg" class="w-10 h-10 object-contain" alt="Smile Emoji">
+            </div>
+
+            <p class="text-gray-400 font-bold text-sm uppercase tracking-[0.2em] mb-10 font-epilogue">Overview</p>
+            
+            <div class="text-dark-text text-xl leading-[1.9] font-medium font-sans flex-grow space-y-8">
+                <p>
+                    I'm <span class="text-[#fd7d54]">Areeya Santiburananon</span>, or <span class="text-[#fd7d54]">May</span>, 
+                    a fourth year Computer Science student at Bangkok University.
+                </p>
+                <p>
+                    I'm interested in data analysis and enjoy using data to gain insights and support decision-making. 
+                    I have experience with Power BI, SQL, and Python through university projects, and I enjoy working with data!
+                </p>
+            </div>
+
+            <p class="text-gray-400 font-bold text-sm font-epilogue uppercase tracking-[0.1em] mt-12 mb-2">Nice to meet you!</p>
+        </div>
+
+    </div>
+</section>
+
+    <section class="max-w-7xl mx-auto px-10 py-16 relative">
+    <div class="max-w-4xl mx-auto">
+        
+        <div class="bg-white rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-100 relative overflow-hidden min-h-[500px]">
+            
+            <div class="absolute top-12 right-12 z-[100] flex gap-3">
+                <button class="prev-btn w-10 h-10 rounded-xl border border-gray-200 flex items-center justify-center bg-white hover:bg-gray-50 transition-all shadow-sm">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="next-btn w-10 h-10 rounded-xl bg-[#282828] text-white flex items-center justify-center hover:bg-[#fd7d54] transition-all shadow-md">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+
+            <div class="swiper mySwiper w-full min-h-[500px]">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide p-12 md:p-16 flex flex-col h-full min-h-[500px]">
+                        <div class="max-w-xl"> 
+                            <h3 class="text-3xl font-bold text-dark-text font-epilogue mb-10 border-b border-gray-100 pb-8">A Bit About May</h3>
+                        </div>
+
+                        <div class="flex items-center gap-4 mb-8">
+                            <img src="images/profile.jpg" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm" alt="Profile">
+                            <div class="flex flex-col">
+                                <span class="text-[#fd7d54] font-bold text-lg leading-none">@areeyamay</span>
+                                <span class="text-gray-400 text-sm mt-1 font-epilogue">Student</span>
+                            </div>
+                        </div>
+
+                        <div class="flex-grow flex items-center">
+                            <p class="text-dark-text text-xl md:text-2xl leading-relaxed font-medium">
+                                I'm May. Born Sept 17, 2000. I'm 25 now and just taking things at my own pace.
+                            </p>
+                        </div>
+                        
+                        <div class="h-12"></div>
+                    </div>
+
+                    <div class="swiper-slide p-12 md:p-16 flex flex-col h-full min-h-[500px]">
+                        <div class="max-w-xl"><h3 class="text-3xl font-bold text-dark-text font-epilogue mb-10 border-b border-gray-100 pb-8">A Bit About May</h3></div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <img src="images/profile.jpg" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm" alt="Profile">
+                            <div><span class="text-[#fd7d54] font-bold text-lg leading-none">@areeyamay</span><span class="text-gray-400 text-sm mt-1 block font-epilogue">Student</span></div>
+                        </div>
+                        <div class="flex-grow flex items-center">
+                            <p class="text-dark-text text-xl md:text-2xl leading-relaxed font-medium">My MBTI is INTP. I might be quiet at first, but I'm always thinking of a thousand things at once.</p>
+                        </div>
+                        <div class="h-12"></div>
+                    </div>
+
+                    <div class="swiper-slide p-12 md:p-16 flex flex-col h-full min-h-[500px]">
+                        <div class="max-w-xl"><h3 class="text-3xl font-bold text-dark-text font-epilogue mb-10 border-b border-gray-100 pb-8">A Bit About May</h3></div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <img src="images/profile.jpg" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm" alt="Profile">
+                            <div class="flex flex-col"><span class="text-[#fd7d54] font-bold text-lg leading-none">@areeyamay</span><span class="text-gray-400 text-sm mt-1 font-epilogue">Student</span></div>
+                        </div>
+                        <div class="flex-grow flex items-center">
+                            <p class="text-dark-text text-xl md:text-2xl leading-relaxed font-medium">My MBTI is INTP. I might be quiet at first, but I'm always thinking of a thousand things at once.</p>
+                        </div>
+                        <div class="h-16"></div>
+                    </div>
+
+                    <div class="swiper-slide p-12 md:p-16 flex flex-col h-full min-h-[500px]">
+                        <div class="max-w-xl"><h3 class="text-3xl font-bold text-dark-text font-epilogue mb-10 border-b border-gray-100 pb-8">A Bit About May</h3></div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <img src="images/profile.jpg" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm" alt="Profile">
+                            <div class="flex flex-col"><span class="text-[#fd7d54] font-bold text-lg leading-none">@areeyamay</span><span class="text-gray-400 text-sm mt-1 font-epilogue">Student</span></div>
+                        </div>
+                        <div class="flex-grow flex items-center">
+                            <p class="text-dark-text text-xl md:text-2xl leading-relaxed font-medium">I'm a huge animal lover, especially cats. I honestly want to help every stray cat out there.</p>
+                        </div>
+                        <div class="h-16"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-pagination absolute bottom-12 left-12 md:left-16 z-[110] flex gap-2"></div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .custom-pagination {
+        position: absolute !important;
+        bottom: 3rem !important; 
+        left: 3rem !important; /* ปรับให้ตรงกับ Padding เนื้อหาด้านซ้าย */
+        width: auto !important;
+        z-index: 110 !important;
+        display: flex !important;
+        gap: 8px !important;
+    }
+    
+    @media (min-width: 768px) {
+        .custom-pagination { left: 4rem !important; } /* ให้ตรงกับ p-16 */
+    }
+
+    .custom-pagination .swiper-pagination-bullet { 
+        width: 10px !important; 
+        height: 10px !important; 
+        background: #E5E7EB !important; 
+        opacity: 1 !important; 
+        margin: 0 !important;
+        border-radius: 50% !important;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .custom-pagination .swiper-pagination-bullet-active { 
+        background: #fd7d54 !important;
+        transform: scale(1.2);
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            speed: 800,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            navigation: { 
+                nextEl: ".next-btn", 
+                prevEl: ".prev-btn" 
+            },
+            pagination: {
+                el: ".custom-pagination",
+                clickable: true,
+            },
+            // เพิ่มสองบรรทัดนี้เพื่อให้ Swiper คำนวณความสูงใหม่หลังโหลดเสร็จ
+            observer: true,
+            observeParents: true,
+        });
+    });
+</script>
+
+    <section class="max-w-7xl mx-auto px-10 pt-32 pb-24 relative">
+    <div class="max-w-5xl mx-auto">
+        
+        <div class="md:ml-20">
+            
+            <h2 class="text-5xl font-bold mb-20 tracking-tight text-dark-text font-epilogue text-left">
+                Education
+            </h2>
+
+            <div class="space-y-12">
+                
+                <div class="flex items-center gap-12 group">
+                    <div class="w-44 shrink-0 bg-white/50 backdrop-blur-lg border border-white/60 px-6 py-3 rounded-2xl text-dark-text font-bold text-[15px] text-center font-epilogue shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-all">
+                        2022 – Present
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <h3 class="text-3xl font-bold text-dark-text font-epilogue">Bangkok University</h3>
+                        <span class="bg-[#282828] text-white px-4 py-2 rounded-xl text-[12px] font-bold tracking-widest font-epilogue uppercase shadow-md">
+                            GPA 3.92
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-12 group">
+                    <div class="w-44 shrink-0 bg-white/50 backdrop-blur-lg border border-white/60 px-6 py-3 rounded-2xl text-dark-text font-bold text-[15px] text-center font-epilogue shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-all">
+                        2013 – 2019
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-text font-epilogue leading-tight">
+                        Nawaminthrachinuthit <br class="hidden md:block"> Triamudomsuksanomklao School
+                    </h3>
+                </div>
+
+                <div class="flex items-center gap-12 group">
+                    <div class="w-44 shrink-0 bg-white/50 backdrop-blur-lg border border-white/60 px-6 py-3 rounded-2xl text-dark-text font-bold text-[15px] text-center font-epilogue shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-all">
+                        2006 – 2012
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-text font-epilogue">
+                        Phramaemareephrakhanong School
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="max-w-6xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 relative">
+    
+    <div class="flex-1 text-left">
+        <h2 class="text-[56px] font-bold text-dark-text font-epilogue leading-tight mb-8">Contact Me</h2>
+        <p class="text-gray-500 text-xl mb-12 leading-[1.6] max-w-md font-medium">
+            I'm currently open to internships and opportunities in UX/UI and Data Analysis. <br> Feel free to reach out!
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-6">
+            <div class="bg-white/40 backdrop-blur-md text-dark-text px-6 py-3 rounded-2xl font-bold text-[15px] flex items-center gap-3 shadow-sm border border-white/40 font-epilogue">
+                <img src="images/call.svg" class="w-4 h-4" alt="Call"> 091-882-5865
+            </div>
+
+            <div class="flex items-center gap-5">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=areeya.sant@gmail.com" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/mail.svg" class="w-8 h-8" alt="Mail">
+                </a>
+                <a href="https://www.facebook.com/areeya.santiburananon" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/facebook.svg" class="w-8 h-8" alt="FB">
+                </a>
+                <a href="https://line.me/ti/p/yeZ6ZIpLTH" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/line.svg" class="w-8 h-8" alt="Line">
+                </a>
+                <a href="https://github.com/areeyamay" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/github.svg" class="w-8 h-8" alt="GH">
+                </a>
+                <a href="https://www.linkedin.com/in/areeya-santiburananon" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/linkedin.svg" class="w-8 h-8" alt="IN">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-1 flex justify-end relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-white/40 blur-[40px] rounded-full -z-10"></div>
+        <div class="w-full max-w-[400px]">
+            <img src="images/contact.png" class="w-full h-auto" alt="Contact">
+        </div>
+    </div>
+</section>
+
+    <footer class="max-w-7xl mx-auto px-10 py-12 border-t border-gray-100/50 mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-[15px] font-medium text-gray-400 font-epilogue">
+            
+            <div class="flex-1 text-left">
+                © 2026 Areeya Santiburananon
+            </div>
+
+            <div class="flex flex-1 justify-center gap-8">
+                <a href="index.html" class="hover:text-dark-text transition-colors">Home</a>
+                <a href="about.html" class="hover:text-dark-text transition-colors">About</a>
+                <a href="projects.html" class="hover:text-dark-text transition-colors">Projects</a>
+                <a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a>
+            </div>
+
+            <div class="flex-1 flex justify-end">
+                <a href="#" class="text-dark-text font-bold hover:opacity-70 transition-opacity flex items-center gap-2">
+                    Back to top
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

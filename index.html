@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maydae | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'may-orange': '#FF8C69',
+                        'may-bg': '#FFFFFF',
+                        'dark-text': '#1e1e1e',
+                    },
+                    fontFamily: {
+                        'sans': ['"DM Sans"', 'sans-serif'],
+                        'epilogue': ['"Epilogue"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'DM Sans', sans-serif; scroll-behavior: smooth; }
+        .font-epilogue { font-family: 'Epilogue', sans-serif; }
+    </style>
+</head>
+<body class="bg-may-bg text-dark-text overflow-x-hidden">
+
+    <nav class="font-epilogue flex justify-between items-center px-10 py-8 max-w-7xl mx-auto">
+    <div class="flex-1">
+        <a href="index.html">
+            <img src="images/Logo.png" class="h-10 object-contain" alt="Maydae Logo">
+        </a>
+    </div>
+    <ul class="hidden md:flex gap-10 text-[15px] font-medium text-gray-400">
+        <li>
+            <a href="index.html" class="text-dark-text relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-dark-text after:rounded-full">
+                Home
+            </a>
+        </li>
+        <li><a href="about.html" class="hover:text-dark-text transition-colors">About</a></li>
+        <li><a href="projects.html" class="hover:text-dark-text transition-colors">Projects</a></li>
+        <li><a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a></li>
+    </ul>
+    <div class="flex-1 text-right">
+        <a href="https://github.com/areeyamay" target="_blank" class="text-[14px] font-medium text-gray-500 hover:text-dark-text transition-colors">@areeyamay</a>
+    </div>
+</nav>
+
+    <div class="fixed inset-0 -z-20 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#ffdce5] blur-[120px] rounded-full opacity-40"></div>
+        <div class="absolute top-[20%] right-[-10%] w-[700px] h-[700px] bg-[#dfc1f5] blur-[140px] rounded-full opacity-30"></div>
+        <div class="absolute bottom-[5%] left-[-5%] w-[600px] h-[600px] bg-[#fff0e0] blur-[120px] rounded-full opacity-50"></div>
+        <div class="absolute bottom-[-10%] right-[5%] w-[500px] h-[500px] bg-[#fd7d54] blur-[100px] rounded-full opacity-20"></div>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center justify-between gap-16 relative">
+    <div class="flex-[1.2]"> 
+        <h1 class="text-[64px] font-bold leading-[1.1] mb-8 tracking-tight text-dark-text">
+            Hi, I'm Areeya May.<br>
+            Aspiring <span class="text-[#fd7d54]">Data Analyst</span>
+        </h1>
+        <p class="text-gray-500 text-xl mb-12 leading-[1.6] max-w-2xl font-medium">
+            I enjoy working with data analysis and have completed university course projects using tools like SQL, Python, and Power BI to extract insights and present data in a clear, meaningful, and easy to understand way.
+        </p>
+        <div class="flex items-center gap-10">
+            <a href="#contact" class="font-epilogue bg-[#282828] text-white px-10 py-4 rounded-2xl font-bold text-base hover:bg-[#fd7d54] transition-all shadow-xl active:scale-95 inline-block">
+                Say Hi 👋
+            </a>
+            <a href="projects.html" class="font-epilogue font-bold text-base border-b-2 border-gray-200 pb-1 hover:border-[#fd7d54] transition text-dark-text">
+                Discover my projects
+            </a>
+        </div>
+    </div>
+    <div class="flex-1 flex justify-end">
+        <div class="w-full max-w-[440px]">
+            <img src="images/home_hero.png" class="w-full h-auto object-contain" alt="Hero Image">
+        </div>
+    </div>
+</section>
+
+    <section class="max-w-7xl mx-auto px-10 py-20 text-center relative">
+        <h2 class="text-5xl font-bold mb-12 tracking-tight text-dark-text font-epilogue">Hard & Soft Skills</h2>
+        <div class="grid md:grid-cols-[1.6fr_1fr] gap-10 items-stretch">
+            <div class="bg-white/40 backdrop-blur-lg p-12 rounded-[3.5rem] text-left border border-white/20 shadow-sm flex flex-col min-h-[480px]">
+                <h3 class="text-gray-400 font-bold text-xs uppercase tracking-[0.2em] mb-10 font-epilogue">Hard Skills</h3>
+                <div class="grid grid-cols-2 gap-x-8 flex-grow font-medium text-dark-text text-[16px]">
+                    <div class="flex flex-col justify-between pb-2">
+                        <p class="flex items-center"><span class="text-[#fd7d54] mr-3 text-lg">✦</span> Python Programming</p>
+                        <p class="flex items-center"><span class="text-[#fd7d54] mr-3 text-lg">✦</span> Data Analysis & Visualization</p>
+                        <p class="flex items-center"><span class="text-[#fd7d54] mr-3 text-lg">✦</span> Data Cleaning</p>
+                        <p class="flex items-center"><span class="text-[#fd7d54] mr-3 text-lg">✦</span> Statistical Analysis</p>
+                        <p class="flex items-center"><span class="text-[#fd7d54] mr-3 text-lg">✦</span> SQL Querying</p>
+                        <p class="flex items-center"><span class="text-[#fd7d54] mr-3 text-lg">✦</span> Dashboard Design</p>
+                    </div>
+                    <div class="flex flex-col justify-between pb-2">
+                        <p class="flex items-center"><span class="text-[#dfc1f5] mr-3 text-lg">✦</span> UX/UI Design</p>
+                        <p class="flex items-center"><span class="text-[#dfc1f5] mr-3 text-lg">✦</span> Wireframing</p>
+                        <p class="flex items-center"><span class="text-[#dfc1f5] mr-3 text-lg">✦</span> Prototyping</p>
+                        <p class="flex items-center"><span class="text-[#dfc1f5] mr-3 text-lg">✦</span> Visual Design</p>
+                        <p class="flex items-center"><span class="text-[#dfc1f5] mr-3 text-lg">✦</span> User Flows</p>
+                        <p class="flex items-center"><span class="text-[#dfc1f5] mr-3 text-lg">✦</span> Front-End Basics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/40 backdrop-blur-lg p-12 rounded-[3.5rem] text-left border border-white/20 shadow-sm flex flex-col min-h-[480px]">
+                <h3 class="text-gray-400 font-bold text-xs uppercase tracking-[0.2em] mb-10 font-epilogue">Soft Skills</h3>
+                <div class="flex flex-col justify-between pb-2 font-medium text-dark-text text-[16px] flex-grow">
+                    <p class="flex items-center"><span class="text-[#4b6332] mr-3 text-sm">●</span> Communication</p>
+                    <p class="flex items-center"><span class="text-[#4b6332] mr-3 text-sm">●</span> Teamwork</p>
+                    <p class="flex items-center"><span class="text-[#4b6332] mr-3 text-sm">●</span> Problem-Solving</p>
+                    <p class="flex items-center"><span class="text-[#4b6332] mr-3 text-sm">●</span> Creativity</p>
+                    <p class="flex items-center"><span class="text-[#4b6332] mr-3 text-sm">●</span> Time Management</p>
+                    <p class="flex items-center"><span class="text-[#4b6332] mr-3 text-sm">●</span> Adaptability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-10 py-20 text-center">
+        <p class="font-epilogue text-[12px] font-bold text-gray-400 tracking-[0.3em] mb-4 uppercase">2D Game</p>
+        <h2 class="text-5xl font-bold mb-6 tracking-tight text-dark-text font-epilogue">Senior Project</h2>
+        <p class="text-gray-500 text-lg mb-8 leading-relaxed max-w-2xl mx-auto font-medium">An 8-bit RPG game focused on environmental awareness, built with the Godot Engine.</p>
+        <div class="mb-10">
+            <a href="https://bruce-wilson.itch.io/tales-of-redemption" target="_blank" class="inline-block font-epilogue bg-orange-50 text-[#fd7d54] px-10 py-3 rounded-full font-bold text-sm hover:bg-[#fd7d54] hover:text-white transition-all shadow-sm">Play Now</a>
+        </div>
+        <div class="max-w-5xl mx-auto"><img src="images/Senior Project.png" class="w-full h-auto rounded-[3rem]" alt="Project"></div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-10 py-8 relative">
+        <div class="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="w-full md:w-1/2 text-left md:pl-24 z-10">
+                <p class="font-epilogue text-[13px] font-bold text-gray-400 tracking-[0.3em] mb-4 uppercase">Fitness Mobile App</p>
+                <h2 class="text-5xl font-bold mb-6 text-dark-text font-epilogue leading-tight">UX/UI Design for<br>FlexZone Mobile App</h2>
+                <p class="text-gray-500 text-[18px] mb-8 max-w-[420px] font-medium leading-relaxed">Designed user flows and interfaces for a fitness app using Figma, prioritizing usability and modern aesthetic.</p>
+                <a href="#" class="inline-block font-epilogue bg-orange-50 text-[#fd7d54] px-8 py-2.5 rounded-full font-bold text-sm hover:bg-[#fd7d54] hover:text-white transition-all shadow-sm">View All Projects</a>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center md:-mb-20">
+                <img src="images/FlexZone_mobile.png" class="w-full max-w-[480px] h-auto object-contain drop-shadow-2xl" alt="FlexZone">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-10 py-8 relative">
+        <div class="max-w-[1100px] mx-auto flex flex-col md:flex-row-reverse items-center justify-between gap-10">
+            <div class="w-full md:w-1/2 text-left md:pl-16 z-10">
+                <p class="font-epilogue text-[13px] font-bold text-gray-400 tracking-[0.3em] mb-4 uppercase">Mobile App</p>
+                <h2 class="text-5xl font-bold mb-6 text-dark-text font-epilogue leading-tight">WaterMe:<br>The Hydration Tracker</h2>
+                <p class="text-gray-500 text-[18px] mb-8 max-w-[420px] font-medium leading-relaxed">A mobile app that helps users track daily water intake with reminders, using a plant watering concept.</p>
+                <a href="#" class="inline-block font-epilogue bg-orange-50 text-[#fd7d54] px-8 py-2.5 rounded-full font-bold text-sm hover:bg-[#fd7d54] hover:text-white transition-all shadow-sm">View All Projects</a>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-start md:-mb-20">
+                <img src="images/WaterMe_mobile.png" class="w-full max-w-[480px] h-auto object-contain drop-shadow-2xl" alt="WaterMe">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-10 py-12">
+    <div class="flex justify-between items-center mb-12 px-4">
+        <h2 class="text-5xl font-bold tracking-tight text-dark-text font-epilogue">More works</h2>
+        <a href="projects.html" class="bg-[#282828] text-white px-8 py-3 rounded-xl font-bold text-sm hover:bg-[#fd7d54] transition-all">View All</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-stretch">
+        
+        <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+            <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner">
+                <img src="images/more_work1.jpg" class="w-full h-full object-cover" alt="W1">
+            </div>
+            <div class="flex flex-col flex-grow">
+                <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-[#fd7d54] transition-colors">Movie Profit Analysis for Streaming</h3>
+                <p class="text-gray-500 text-lg mb-10 flex-grow">A data analysis project using Power BI to identify high-ROI films and key factors for streaming platform decisions.</p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Data Analysis</span>
+                    <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Data Visualization</span>
+                    <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Power BI</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/40 backdrop-blur-lg rounded-[3rem] p-10 flex flex-col border border-white/20 transition-all hover:shadow-xl hover:-translate-y-2 cursor-pointer group">
+            <div class="rounded-[2.5rem] overflow-hidden mb-10 w-full h-[300px] shadow-inner">
+                <img src="images/more_work2.jpg" class="w-full h-full object-cover" alt="W2">
+            </div>
+            <div class="flex flex-col flex-grow">
+                <h3 class="text-2xl font-bold mb-5 text-dark-text font-epilogue group-hover:text-[#fd7d54] transition-colors">MeowMood</h3>
+                <p class="text-gray-500 text-lg mb-10 flex-grow">A web application for classifying cat emotions from images using deep learning (TensorFlow).</p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Web App</span>
+                    <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Deep Learning</span>
+                    <span class="bg-[#f3f3f3] text-dark-text px-5 py-2.5 rounded-xl text-[13px] font-bold font-epilogue transition-colors group-hover:bg-white">Image Classification</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact" class="max-w-6xl mx-auto px-10 py-20 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 relative">
+    
+    <div class="flex-1 text-left">
+        <h2 class="text-[56px] font-bold text-dark-text font-epilogue leading-tight mb-8">Contact Me</h2>
+        <p class="text-gray-500 text-xl mb-12 leading-[1.6] max-w-md font-medium">
+            I'm currently open to internships and opportunities in UX/UI and Data Analysis. <br> Feel free to reach out!
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-6">
+            <div class="bg-white/40 backdrop-blur-md text-dark-text px-6 py-3 rounded-2xl font-bold text-[15px] flex items-center gap-3 shadow-sm border border-white/40 font-epilogue">
+                <img src="images/call.svg" class="w-4 h-4" alt="Call"> 091-882-5865
+            </div>
+
+            <div class="flex items-center gap-5">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=areeya.sant@gmail.com" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/mail.svg" class="w-8 h-8" alt="Mail">
+                </a>
+                <a href="https://www.facebook.com/areeya.santiburananon" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/facebook.svg" class="w-8 h-8" alt="FB">
+                </a>
+                <a href="https://line.me/ti/p/yeZ6ZIpLTH" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/line.svg" class="w-8 h-8" alt="Line">
+                </a>
+                <a href="https://github.com/areeyamay" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/github.svg" class="w-8 h-8" alt="GH">
+                </a>
+                <a href="https://www.linkedin.com/in/areeya-santiburananon" target="_blank" class="hover:-translate-y-1 transition-transform">
+                    <img src="images/linkedin.svg" class="w-8 h-8" alt="IN">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-1 flex justify-end relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-white/40 blur-[40px] rounded-full -z-10"></div>
+        <div class="w-full max-w-[400px]">
+            <img src="images/contact.png" class="w-full h-auto" alt="Contact">
+        </div>
+    </div>
+</section>
+
+    <footer class="max-w-7xl mx-auto px-10 py-12 border-t border-gray-100/50 mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-[15px] font-medium text-gray-400 font-epilogue">
+            
+            <div class="flex-1 text-left">
+                © 2026 Areeya Santiburananon
+            </div>
+
+            <div class="flex flex-1 justify-center gap-8">
+                <a href="index.html" class="hover:text-dark-text transition-colors">Home</a>
+                <a href="about.html" class="hover:text-dark-text transition-colors">About</a>
+                <a href="projects.html" class="hover:text-dark-text transition-colors">Projects</a>
+                <a href="experience.html" class="hover:text-dark-text transition-colors">Experience</a>
+            </div>
+
+            <div class="flex-1 flex justify-end">
+                <a href="#" class="text-dark-text font-bold hover:opacity-70 transition-opacity flex items-center gap-2">
+                    Back to top
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
